@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>MHISA</title>
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- All CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <header class="main-head">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html"><img src="images/nav-logo.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="stick"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <span class="stick"></span>
+                    </button>
+                    <ul class="navbar-nav mx-auto">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="database.html">Database</a></li>
+                        <li><a href="learn-about-provider.html">Learn</a></li>
+                        <li><a href="faq.html">FAQ’s</a></li>
+                        <li class="current-menu-item"><a href="about-us.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="btn-wrapper">
+                    <a href="#url" class="login-btn"><img src="images/login.svg" alt="">Login</a>
+                </div>
+            </nav>
+        </div>
+        <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+    </header>
+
+    <!-- faq Banner section  -->
+    <div class="index-banner-sec cmn-bnner-sec about-bnr-sec">
+        <div class="container">
+            <div class="row innrSec_rw">
+                <div class="col-lg-6 col-md-6">
+                    <div class="banner-txt-wpr about-heading">
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="right-img-wpr cmn-img-wpr about-rt-img">
+                        <figure><img src="images/about-banner.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about_sec cmn_gap">
+        <div class="container">
+            <p>This website started as a project by alumni from Allen High School in Allen, TX. During the spring of 2021, three former Allen High School students, Farhan, Farbin, and Tanvir Towhid, passed away in a murder-suicide that also claimed the lives of their parents and grandmother.</p>
+            <p>In the aftermath of the killings, Allen’s community was shaken. Farhan, Farbin, and Tanvir had been our acquaintances, classmates, and even good friends since middle school. Some of us were still at Allen High School, others had also attended the University of Texas at Austin together with Farhan. For many of us, it was our first reckoning with the ways our mental healthcare system fell short.</p>
+            <p>The Towhid family had tried to find a therapist for Farhan. Unfortunately, none of them stuck; Farhan didn’t believe any of the providers fully understood his current situation or cultural background. His story showed us how important culturally-competent options are for members of our community who seek care.</p>
+            <p>We decided to create a nationwide database of South Asian therapists, psychiatrists, and counselors in the U.S. who can understand nuances specific to our culture. We used machine learning driven search methods and state-wide provider databases to increase our yield of providers, in the hope that any member of our community, no matter if they lived in North Dallas or North Dakota, would have access to mental healthcare that understood their unique experiences.</p>
+            <p>For those who find this resource, we hope it can be a valuable aid in your mental health journey. We recognize that not everyone is in the midst of a mental health crisis, and we encourage you to consider therapy as an option to make changes in your life nonetheless!</p>
+            <p>Our journey doesn’t end here: two of us co-founded the Mental Health Initiative for South Asians. MHISA is a grassroots, non-profit organization committed to developing culturally-tailored mental health resources for South Asian Americans and working closely with religious communities to deliver these resources on the ground. Visit https://mhisa.org/ to learn more about our founders and the other projects we’ve been working on!</p>
+            <figure><img src="images/about-img.jpg" alt=""></figure>
+        </div>
+    </div>
+
+    <div class="getData_sec cmn_gap">
+        <div class="container">
+            <div class="row getData_rw">
+                <div class="col-lg-6 getData_txt_col">
+                    <div class="cmn-heading">
+                        <h2>How we get our data</h2>
+                        <p>We assembled the core of this database by first scouring publicly available state databases (yes, all 50 of them) of mental health care providers. We applied the ethnicolr model along with a large repository of census names from South Asian countries to get a set of probable South Asian names. Finally, we took extra steps to reduce the occurrence of false positive names, just to make sure our information was as accurate as possible.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 getData_img_col">
+                    <div class="getData_img_wrp">
+                        <p>These are our results so far:</p>
+                        <figure><img src="images/map.jpg" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="learn_sec" style="background: url(images/learn-website.jpg) center no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="cmn-heading">
+                <h2>Visit our main website to learn more about us!</h2>
+                <a href="#" class="cmn-button">Learn More<span><img src="images/grn-arw.svg" alt=""></span></a>
+            </div>
+        </div>
+    </div>
+   
+    
+    <!-- Footer section  -->
+    <footer class="footer-sec">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-row">
+                    <div class="footer-col1">
+                        <div class="ftr-col1-wrp">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="images/footer-logo.png" alt="">
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices hendrerit..</p>
+                            </div>
+                            <div class="social-btn">
+                                <a href="#"><img src="images/fb.svg" alt=""></a>
+                                <a href="#"><img src="images/twitter.svg" alt=""></a>
+                                <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                                <a href="#"><img src="images/insta.svg" alt=""></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="footer-col2">
+                        <div class="footer-qlinks">
+                           <div class="ftr-cmn-head">
+                                <p class="h-four">Quick Links</p>
+                           </div>
+                           <div class="footer-lists">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="footer-current-menu"><a href="about-us.html">About</a></li>
+                                    <li><a href="database.html">Database</a></li>
+                                    <li><a href="faq.html">FAQ’s </a></li>
+                                    <li><a href="learn-about-provider.html">Learn</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                           </div>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-col3">
+                       <div class="footer-contact">
+                            <div class="ftr-cmn-head">
+                                <p class="h-four">Contact Us</p>
+                            </div>
+                            <div class="footer-contact-list">
+                                <ul>
+                                    <li><a href="tel:19728766562"><span><img src="images/tel.svg" alt=""></span>1 972-876-6562</a></li>
+                                    <li><a href="mailto:keya.shah@mhisa.org"><span><img src="images/mail.svg" alt=""></span>keya.shah@mhisa.org</a></li>
+                                    <li><a href="#"><span><img src="images/loc.svg" alt=""></span>9890 dummy address #12 Las Vegas, NV</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; <a href="index.html">MHISA</a>. 2023. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
